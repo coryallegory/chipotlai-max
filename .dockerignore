@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!.dockerignore
+!compose.yml
+!chipotle-llm-provider/
+!chipotle-llm-provider/**

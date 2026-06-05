@@ -34,3 +34,7 @@ logs/
 packages/storybook/debug-storybook.log
 *.bun-build
 tsconfig.tsbuildinfo
+
+# Docker
+docker-data/
+compose.override.yml
