@@ -2,10 +2,10 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app/chipotle-llm-provider
 
-COPY chipotle-llm-provider/package*.json ./
+COPY package*.json ./
 RUN npm install
 
-COPY chipotle-llm-provider/ ./
+COPY . ./
 RUN npm run build && npm prune --omit=dev
 
 FROM node:20-alpine
