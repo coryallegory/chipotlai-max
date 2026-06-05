@@ -1,8 +1,8 @@
 services:
   chipotle-llm-provider:
     build:
-      context: ./chipotle-llm-provider
-      dockerfile: ../Dockerfile
+      context: .
+      dockerfile: Dockerfile
     environment:
       PORT: "3000"
       MAX_POOL_SIZE: "${MAX_POOL_SIZE:-5}"
