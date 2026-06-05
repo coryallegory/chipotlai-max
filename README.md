@@ -46,6 +46,16 @@ cd chipotle-llm-provider && npm install && npm run dev
 bun run dev
 ```
 
+### Docker Compose (proxy only)
+
+```bash
+# If you did not clone with --recursive
+git submodule update --init --recursive
+
+docker compose build
+docker compose up
+```
+
 ## Configuration
 
 Chipotlai Max comes pre-configured with:
