@@ -3,7 +3,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app/chipotle-llm-provider
 
 COPY chipotle-llm-provider/package*.json ./
-RUN npm ci
+RUN npm install
 
 COPY chipotle-llm-provider/ ./
 RUN npm run build && npm prune --omit=dev
